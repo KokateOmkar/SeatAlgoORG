@@ -1,3 +1,4 @@
+
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -22,11 +23,11 @@ def introduction_page():
     st.header("""
     Check your :red[eligibility] status right now.
     """)
-    
+
     st.markdown(
     """
     <style>
-    .st-emotion-cache-nbt3vv.ef3psqc13 {
+    .st-emotion-cache-q3uqly.ef3psqc13{
         display: block;
         margin: 0 auto;
     }
@@ -35,7 +36,7 @@ def introduction_page():
     unsafe_allow_html=True
 )
     st.divider()
-    
+
     st.subheader("""
      Click the button below to predict your college!
     """)
@@ -150,4 +151,3 @@ if st.session_state.page == "introduction":
     introduction_page()
 elif st.session_state.page == "main_project":
     main_project()
-    
